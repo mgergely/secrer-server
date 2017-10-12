@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="application-name" content="Secret form">
+	<meta name="msapplication-starturl" content="/">
+
+    <title>Secret form</title>
+</head>
+<body>
+	<form action="http://192.168.10.10:8080/secret" method="post">
+		<div>
+			Secret: <input type="text" name="secret">
+		</div>
+		<div>
+			How many can view: <input type="number" name="expireAfterViews">
+		</div>
+		<div>
+			Valid until: <input type="datetime" name="expireAfter">
+		</div>
+		<div>
+			<input type="submit" value="Add new secret">
+		</div>
+	</form>
+</body>
+</html>
